@@ -2,6 +2,8 @@ package com.techreturners.encapsulation.bankaccount.app;
 
 import com.techreturners.encapsulation.bankaccount.model.DodgyBankAccount;
 import com.techreturners.encapsulation.bankaccount.model.SecureBankAccount;
+import com.techreturners.encapsulation.bankaccount.model.WeatherReporter;
+import com.techreturners.encapsulation.bankaccount.model.WeatherReporterAltered;
 
 public class Main {
 
@@ -9,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //DODGY BANK ACCOUNT
+       //DODGY BANK ACCOUNT
         System.out.println("--- DODGY BANK ACCOUNT ---\n");
         System.out.println("Mmm...I spot a dodgy bank account! Let's make one!");
         DodgyBankAccount myDodgyBankAccount = new DodgyBankAccount(MYACCOUNTNUMBER);
@@ -62,6 +64,32 @@ public class Main {
         //mySecureBankAccount.accountBalance = 1000000;
         mySecureBankAccount.displayAccountBalance();
         System.out.println("😹 Well I guess that's secure!");
+
+
+      /*  //WeatherReporter
+        WeatherReporter myWeatherReporter = new WeatherReporter("London", 13.00);
+        System.out.println("Weather Report");
+        String result = myWeatherReporter.print();
+        System.out.println(result);
+        System.out.println(myWeatherReporter.print());
+        System.out.println("Did it work?"); */
+
+        //WeatherReporterAltered
+      WeatherReporterAltered weatherReporterAltered = new WeatherReporterAltered("Kerala", 20.00);
+      System.out.println(weatherReporterAltered.formatMessage());
+
+        WeatherReporterAltered weatherReporterAltered1 = new WeatherReporterAltered("London", 8.00);
+        System.out.println(weatherReporterAltered1.formatMessage());
+
+        WeatherReporterAltered weatherReporterAltered2 = new WeatherReporterAltered("California", 40.00);
+        System.out.println(weatherReporterAltered2.formatMessage());
+
+        WeatherReporterAltered weatherReporterAltered3 = new WeatherReporterAltered("Cape Town", 5.00);
+        System.out.println(weatherReporterAltered3.formatMessage());
+
+
     }
+
+
 
 }

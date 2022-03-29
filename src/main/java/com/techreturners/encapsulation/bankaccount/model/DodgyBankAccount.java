@@ -24,8 +24,6 @@ public class DodgyBankAccount {
         accountBalance -= amount;
     }
 
-    public void addReward() {
-        accountBalance += rewardAmount;
-    }
+    public void addReward() {accountBalance += rewardAmount;}
 
 }
